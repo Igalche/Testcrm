@@ -1,0 +1,24 @@
+---
+import '../styles/global.css';
+import Contador from '../components/Contador.jsx';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto Astro</title>
+  </head>
+  <body class="p-4 space-y-4">
+    <h1 class="text-3xl font-bold underline">
+      Hola, Astro + React + Tailwind + DaisyUI
+    </h1>
+
+    <button class="btn btn-primary">
+      Botón DaisyUI, DaisyUI y Tailwind están funcionando
+    </button>
+
+    <Contador client:load />
+  </body>
+</html>
